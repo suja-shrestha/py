@@ -10,8 +10,22 @@ else:
     else:
         print(f"{provided_number} is a prime number.")
 
+def is_even_or_odd(num):
+    if num % 2 == 0:
+        print(f"{num} is an even number.")
+    else:
+        print(f"{num} is an odd number.")
 
-if provided_number % 2 == 0:
-    print(f"{provided_number} is an even number.")  
-else:
-    print(f"{provided_number} is an odd number.")   
+is_even_or_odd(provided_number)
+
+def break_and_continue_example(provided_number):
+    for i in range(1, provided_number + 1):
+        if i == 5:
+            print("Breaking the loop at 5")
+            break
+        if i % 2 == 0:
+            print(f"Skipping even number: {i}")
+            continue
+        print(f"Processing number: {i}")
+
+break_and_continue_example(provided_number)
