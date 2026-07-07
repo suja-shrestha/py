@@ -1,0 +1,5 @@
+file_path = open(r"C:\Users\Acer\Desktop\py\pyy\file_handling\Gay_file.txt")
+print(file_path)
+print(file_path.read())
+print(file_path.readline())
+file_path.close()
